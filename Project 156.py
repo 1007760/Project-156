@@ -1,0 +1,17 @@
+from tkinter import *
+from PIL import ImageTk, Image
+root = Tk()
+root.geometry("500x500")
+root.title("Pokemon")
+root.configure(background = "pink")
+player1 = Label(root, text = "Player 1", bg = "red", fg = "blue")
+player2 = Label(root, text = "Player 2", bg = "yellow", fg = "purple")
+player1.place(relx = 0.1, rely = 0.3, anchor = CENTER)
+player2.place(relx = 0.9, rely = 0.3, anchor = CENTER)
+player1score = Label(root, bg = "red", fg = "yellow")
+player2score = Label(root, bg = "blue", fg = "green")
+player1score.place(relx = 0.1, rely = 0.4, anchor = CENTER)
+player2score.place(relx = 0.9, rely = 0.4, anchor = CENTER)
+card = Label(root, bg = "orange", fg = "green")
+card.place(relx = 0.5, rely = 0.5, anchor = CENTER)
+root.mainloop()
